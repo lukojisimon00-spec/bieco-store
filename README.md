@@ -2,6 +2,8 @@
 
 Boutique en ligne de Bieco Production (Kinshasa) : produits agroalimentaires et formations.
 
+Site en ligne : <https://bieco-store.vercel.app>
+
 ## Contenu
 
 - `index.html` : le site (une seule page, mobile-first).
