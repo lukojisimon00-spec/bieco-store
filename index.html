@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#176b3a">
+  <meta name="description" content="Bieco Store : produits agroalimentaires et formations pratiques, avec commande simple à Kinshasa.">
+  <title>Bieco Store — Le bon choix, simplement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#176b3a;--green-dark:#104c2b;--green-pale:#edf7ef;--orange:#f47721;--ink:#17251d;--muted:#69756d;--line:#e6ece7;--paper:#fff;--bg:#f7f9f6;--radius:22px;--shadow:0 12px 35px rgba(19,55,32,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.5}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+    .topline{background:var(--green-dark);color:#eaf7ed;font-size:12px;text-align:center;padding:8px 12px;letter-spacing:.2px}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;min-width:0}.brandmark{width:42px;height:42px;flex:none}.brandname{font:800 22px/1 "Manrope",sans-serif;letter-spacing:-.8px}.brandname span{color:var(--orange)}.brandtag{font-size:10px;color:var(--muted);margin-top:5px}.navlinks{display:flex;align-items:center;gap:26px;font-size:13px;font-weight:700;color:#46554a}.navlinks a:hover{color:var(--green)}.btn{border:0;border-radius:12px;padding:12px 17px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:800;cursor:pointer;transition:transform .18s,background .18s;min-height:44px}.btn:hover{transform:translateY(-1px)}.btn-orange{background:var(--orange);color:white;box-shadow:0 6px 16px #f477212b}.btn-orange:hover{background:#e86412}.btn-green{background:var(--green);color:#fff}.btn-outline{border:1px solid #dce6dd;background:#fff;color:var(--green)}
+    .hero{padding:34px 0 26px}.hero-card{position:relative;overflow:hidden;border-radius:30px;min-height:410px;background:linear-gradient(110deg,#103e26 0%,#176b3a 54%,#397a45 100%);color:white;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;box-shadow:var(--shadow)}.hero-copy{padding:clamp(28px,5vw,58px);position:relative;z-index:2}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#ffffff1c;border:1px solid #ffffff28;border-radius:999px;padding:7px 12px;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}.eyebrow i{width:7px;height:7px;border-radius:50%;background:#ffb06f}.hero h1{font:800 clamp(32px,4.4vw,53px)/1.08 "Manrope",sans-serif;letter-spacing:-1.8px;margin:20px 0 15px;max-width:540px}.hero h1 em{font-style:normal;color:#ffb36f}.hero p{color:#d7eadb;max-width:430px;font-size:15px;margin:0}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.hero .btn-outline{background:#ffffff12;color:white;border-color:#ffffff5c}.hero-art{height:100%;min-height:320px;position:relative;display:flex;align-items:center;justify-content:center;padding:24px}.hero-art:before{content:"";position:absolute;width:310px;height:310px;border-radius:50%;background:#ffffff0c;border:1px solid #ffffff22}.hero-art img{position:relative;width:100%;height:330px;object-fit:cover;border-radius:180px 180px 26px 26px;max-width:310px;box-shadow:0 24px 50px #092a1740}.floating-note{position:absolute;bottom:37px;left:7%;background:white;color:var(--ink);padding:12px 15px;border-radius:15px;box-shadow:var(--shadow);font-size:12px;font-weight:800}.floating-note small{display:block;color:var(--muted);font-size:10px;font-weight:500}
+    .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 10px}.trust-item{display:flex;align-items:center;gap:12px;padding:15px 17px;background:white;border:1px solid var(--line);border-radius:16px}.trust-icon{width:38px;height:38px;display:grid;place-items:center;background:var(--green-pale);border-radius:12px;color:var(--green);font-size:18px;flex:none}.trust-item strong{font-size:12px;display:block}.trust-item span{font-size:11px;color:var(--muted)}
+    section{padding:38px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:20px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;color:var(--orange);font-weight:800}.section-head h2{font:800 clamp(24px,3vw,32px)/1.2 "Manrope",sans-serif;letter-spacing:-.8px;margin:6px 0 0}.section-head p{margin:7px 0 0;color:var(--muted);font-size:13px}.categories{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;color:#5c6b60;font-size:12px;font-weight:700;cursor:pointer}.chip.active,.chip:hover{background:var(--green);border-color:var(--green);color:white}
+    .products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.product{background:white;border:1px solid var(--line);border-radius:20px;padding:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .2s,box-shadow .2s}.product:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.product-img{height:178px;border-radius:14px;overflow:hidden;background:#f1f4ef;position:relative}.product-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}.product:hover .product-img img{transform:scale(1.04)}.tag{position:absolute;top:10px;left:10px;background:#fff;color:var(--green);padding:5px 8px;border-radius:8px;font-size:10px;font-weight:800}.product-body{padding:12px 4px 3px;display:flex;flex-direction:column;flex:1}.product h3{font:800 14px "Manrope",sans-serif;margin:0 0 4px}.product .desc{font-size:11px;color:var(--muted);margin:0 0 12px}.price-row{display:flex;align-items:baseline;gap:5px;margin-top:auto;margin-bottom:12px}.price{font:800 16px "Manrope",sans-serif;color:var(--green)}.unit{font-size:10px;color:var(--muted)}.product .btn{width:100%;padding:10px;font-size:12px;min-height:41px}
+    .training{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.course{display:grid;grid-template-columns:130px 1fr;gap:18px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:20px;background:#fff}.course-art{height:150px;border-radius:14px;display:grid;place-items:center;color:white;font-size:43px;background:linear-gradient(145deg,#175c35,#73a65e)}.course:nth-child(2) .course-art{background:linear-gradient(145deg,#bb581a,#f5a64b)}.course .label{display:inline-block;font-size:10px;color:var(--orange);background:#fff1e7;padding:5px 8px;border-radius:7px;font-weight:800}.course h3{font:800 15px/1.3 "Manrope",sans-serif;margin:9px 0 6px}.course p{font-size:11px;color:var(--muted);margin:0 0 10px}.course-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}.course-foot .price{font-size:17px}
+    .callout{padding:0 0 42px}.callout-card{background:#fff2e8;border:1px solid #ffe1cc;border-radius:24px;padding:26px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px}.callout-card h2{font:800 23px "Manrope",sans-serif;margin:0 0 6px;letter-spacing:-.6px}.callout-card p{font-size:13px;color:#765b49;margin:0}
+    footer{background:#103e26;color:#e7f2e8;padding:32px 0 18px}.footer-main{display:flex;align-items:flex-start;justify-content:space-between;gap:28px;padding-bottom:25px}.footer-brand .brandname{color:white}.footer-brand p{font-size:12px;color:#bfd4c2;max-width:290px}.footer-contact{font-size:12px;color:#d1e2d3;display:grid;gap:8px}.footer-contact a:hover{color:#ffb36f}.footer-bottom{border-top:1px solid #ffffff25;padding-top:15px;display:flex;justify-content:space-between;gap:12px;font-size:10px;color:#a9c4ad}
+    .modal{position:fixed;inset:0;background:#07180dcc;z-index:50;display:none;align-items:center;justify-content:center;padding:16px}.modal.open{display:flex}.modal-card{background:white;border-radius:22px;padding:24px;width:min(480px,100%);max-height:92vh;overflow:auto;box-shadow:0 30px 90px #0004}.modal-head{display:flex;justify-content:space-between;gap:15px;align-items:start}.modal h2{font:800 22px "Manrope",sans-serif;margin:0}.modal-sub{font-size:12px;color:var(--muted);margin:7px 0 18px}.close{border:0;background:#f0f4f0;width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer;flex:none}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:12px;font-weight:800}.field input,.field select{width:100%;padding:12px;border:1px solid #dce5dd;border-radius:11px;outline:none;background:white;font-size:13px}.field input:focus,.field select:focus{border-color:var(--green);box-shadow:0 0 0 3px #176b3a16}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.summary{background:var(--green-pale);border-radius:13px;padding:13px;display:flex;justify-content:space-between;gap:10px;margin:16px 0;font-size:12px}.summary strong{color:var(--green)}.modal .btn{width:100%}.notice{font-size:10px;color:var(--muted);text-align:center;margin:10px 0 0}.success{display:none}.success.show{display:block}.success-box{background:var(--green-pale);padding:16px;border-radius:14px;font-size:12px;margin:16px 0;line-height:1.8}.success-box strong{color:var(--green)}.hidden{display:none!important}
+
+    .swipe-hint{display:none;font-size:11px;color:var(--muted);margin:-7px 0 12px}
+    /* Animations visibles : arrivée du hero, produit flottant et révélation au défilement */
+    .hero-card{isolation:isolate;animation:heroEnter .85s cubic-bezier(.2,.75,.25,1) both}
+    .hero-card:after{content:"";position:absolute;inset:-40% auto -40% -35%;width:30%;background:linear-gradient(90deg,transparent,#ffffff18,transparent);transform:skewX(-18deg);animation:heroShine 7s ease-in-out 1.2s infinite;pointer-events:none;z-index:1}
+    .hero-copy>*{animation:copyEnter .65s both;opacity:0}.hero-copy>*:nth-child(1){animation-delay:.12s}.hero-copy>*:nth-child(2){animation-delay:.24s}.hero-copy>*:nth-child(3){animation-delay:.36s}.hero-copy>*:nth-child(4){animation-delay:.48s}
+    .hero-art:before{animation:haloPulse 4s ease-in-out infinite}.hero-art img{animation:productFloat 4.5s ease-in-out infinite;will-change:transform}.floating-note{animation:noteFloat 3.5s ease-in-out infinite}
+    .eyebrow i{animation:dotPulse 1.8s ease-out infinite}
+    .product{animation:cardIn .65s cubic-bezier(.2,.75,.25,1) both}.product:nth-child(2){animation-delay:.08s}.product:nth-child(3){animation-delay:.16s}.product:nth-child(4){animation-delay:.24s}.product:nth-child(5){animation-delay:.32s}
+    .trust-item,.course,.callout-card,.section-head{transition:transform .25s ease,box-shadow .25s ease}.trust-item:hover,.course:hover,.callout-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .btn{position:relative;overflow:hidden;transition:transform .22s ease,background .22s ease,box-shadow .22s ease}.btn:active{transform:scale(.97)}.btn-orange:hover,.btn-green:hover{box-shadow:0 9px 24px #103e2625}
+    .reveal-ready .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.25,1)}.reveal-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
+    @keyframes heroEnter{from{opacity:0;transform:translateY(20px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @keyframes copyEnter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes heroShine{0%,55%{left:-35%;opacity:0}65%{opacity:1}90%,100%{left:120%;opacity:0}}
+    @keyframes productFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes noteFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    @keyframes haloPulse{0%,100%{transform:scale(1);opacity:.65}50%{transform:scale(1.06);opacity:1}}
+    @keyframes dotPulse{0%{box-shadow:0 0 0 0 #ffb06f88}70%{box-shadow:0 0 0 7px #ffb06f00}100%{box-shadow:0 0 0 0 #ffb06f00}}
+    @keyframes cardIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal-ready .reveal{opacity:1;transform:none}}
+    @media(max-width:850px){.navlinks{gap:14px}.navlinks a:nth-child(2){display:none}.hero-card{grid-template-columns:1fr .75fr}.hero-art img{height:280px}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.product-img{height:220px}.course-grid{grid-template-columns:1fr}}
+    @media(max-width:600px){.swipe-hint{display:block}.wrap{width:calc(100% - 28px)}.topline{font-size:10px}.nav{height:66px}.brandmark{width:37px;height:37px}.brandname{font-size:19px}.brandtag{font-size:9px}.navlinks{display:none}.nav>.btn{padding:10px 12px;min-height:40px;font-size:11px}.hero{padding:18px 0 15px}.hero-card{grid-template-columns:1fr;min-height:0;border-radius:23px}.hero-copy{padding:27px 23px 12px}.hero h1{font-size:34px;letter-spacing:-1.2px;margin:16px 0 12px}.hero p{font-size:13px}.hero-actions{margin-top:20px}.hero-actions .btn{flex:1;padding:11px 12px;font-size:12px}.hero-art{min-height:215px;padding:10px 20px 24px}.hero-art:before{width:210px;height:210px}.hero-art img{height:205px;max-width:230px;width:80%;border-radius:120px 120px 18px 18px}.floating-note{bottom:25px;left:8%;padding:9px 12px;font-size:11px}.trust{gap:8px;margin:12px 0}.trust-item{padding:10px 8px;display:block;text-align:center;border-radius:13px}.trust-icon{margin:0 auto 7px;width:32px;height:32px;font-size:15px}.trust-item strong{font-size:10px}.trust-item span{font-size:9px;line-height:1.3;display:block;margin-top:3px}section{padding:27px 0}.section-head{align-items:start;margin-bottom:16px}.section-head h2{font-size:24px}.section-head p{font-size:12px}.section-head>.btn{font-size:10px;padding:9px 10px;min-height:38px;white-space:nowrap}.products{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;padding:2px 2px 14px;scroll-snap-type:x mandatory;scroll-padding-left:2px;-webkit-overflow-scrolling:touch;touch-action:pan-x;overscroll-behavior-x:contain}.products::-webkit-scrollbar{height:4px}.products::-webkit-scrollbar-thumb{background:#cbd8ce;border-radius:99px}.products .product{flex:0 0 76%;max-width:300px;scroll-snap-align:start;padding:7px;border-radius:16px}.product-img{height:145px;border-radius:11px}.product-body{padding:10px 3px 3px}.product h3{font-size:12px}.product .desc{font-size:10px;margin-bottom:10px}.price{font-size:14px}.product .btn{font-size:11px;padding:8px 6px;min-height:39px}.tag{font-size:9px;top:7px;left:7px}.course{grid-template-columns:90px 1fr;gap:12px;padding:11px;border-radius:16px}.course-art{height:130px;font-size:34px}.course h3{font-size:13px}.course p{font-size:10px}.course-foot{align-items:start;flex-direction:column;gap:8px}.course-foot .btn{width:100%;font-size:11px;padding:9px}.callout{padding-bottom:28px}.callout-card{padding:21px;align-items:start;flex-direction:column;border-radius:20px}.callout-card h2{font-size:20px}.callout-card p{font-size:12px}.footer-main{flex-direction:column;gap:12px}.footer-bottom{flex-direction:column;gap:5px}.two{grid-template-columns:1fr 1fr;gap:8px}.modal-card{padding:19px;border-radius:19px}.modal h2{font-size:20px}}
+    @media(max-width:360px){.hero h1{font-size:30px}.products{gap:8px}.product-img{height:125px}.course{grid-template-columns:76px 1fr}.course-art{height:115px}.brandtag{display:none}}
+  </style>
+</head>
+<body>
+  <div class="topline">Bieco Production · Produits agroalimentaires et formations à Kinshasa</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#" aria-label="Bieco Store, accueil">
+        <svg class="brandmark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <path d="M25 35C35 20 60 20 75 35" stroke="#f47721" stroke-width="8" stroke-linecap="round"/>
+          <path d="M15 55C15 30 40 15 70 30C80 35 85 45 85 55C85 70 70 85 45 85C30 85 20 75 15 65" stroke="#176b3a" stroke-width="9" stroke-linecap="round"/>
+          <path d="M20 78C30 88 50 88 68 75" stroke="#f47721" stroke-width="7" stroke-linecap="round"/>
+          <path d="M60 15C60 15 85 25 80 50C77 62 65 70 50 75C60 65 65 45 60 15Z" fill="#176b3a"/>
+        </svg>
+        <div><div class="brandname">Bieco <span>Store</span></div><div class="brandtag">Le bon choix, simplement.</div></div>
+      </a>
+      <nav class="navlinks" aria-label="Navigation principale"><a href="#produits">Nos produits</a><a href="#formations">Formations</a><a href="#contact">Contact</a></nav>
+      <a class="btn btn-orange" href="#produits">Découvrir la boutique <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div class="hero-card">
+        <div class="hero-copy">
+          <span class="eyebrow"><i></i> Frais · Pratique · Local</span>
+          <h1>Le meilleur de l’agroalimentaire, <em>plus simplement.</em></h1>
+          <p>Découvrez une sélection de produits et des formations pratiques pour vous accompagner au quotidien et développer vos compétences.</p>
+          <div class="hero-actions"><a class="btn btn-orange" href="#produits">Voir les produits <span aria-hidden="true">→</span></a><a class="btn btn-outline" href="#formations">Nos formations</a></div>
+        </div>
+        <div class="hero-art">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=85" alt="Sélection de produits frais au marché" onerror="this.style.display='none'">
+          <div class="floating-note">Le choix de proximité<small>Pour votre quotidien à Kinshasa</small></div>
+        </div>
+      </div>
+      <div class="trust">
+        <div class="trust-item"><div class="trust-icon">⌂</div><div><strong>Proche de vous</strong><span>Service à Kinshasa</span></div></div>
+        <div class="trust-item"><div class="trust-icon">✓</div><div><strong>Commande simple</strong><span>En quelques étapes</span></div></div>
+        <div class="trust-item"><div class="trust-icon">↗</div><div><strong>Apprendre aussi</strong><span>Guides et formations</span></div></div>
+      </div>
+    </div>
+
+    <section id="produits">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">La boutique</div><h2>Nos produits</h2><p>Des essentiels sélectionnés pour vous.</p></div><span class="chip active">Prix en francs congolais (FC)</span></div>
+        <p class="swipe-hint">← Faites glisser les produits avec le doigt pour en découvrir davantage →</p>
+        <div class="categories" aria-label="Catégories de produits"><button class="chip active" data-filter="all">Tout voir</button><button class="chip" data-filter="vivrier">Farines & vivriers</button><button class="chip" data-filter="epicerie">Épicerie</button><button class="chip" data-filter="kit">Kits</button></div>
+        <div class="products">
+          <article class="product featured-product" data-category="vivrier">
+            <div class="product-img"><img loading="eager" src="images/fufu-express.jpg" alt="Emballage Fufu Express, semoule instantanée de maïs et manioc"><span class="tag">Produit vedette</span></div>
+            <div class="product-body"><h3>Fufu Express</h3><p class="desc">Semoule instantanée à base de maïs et manioc · préparation en moins de 2 minutes</p><div class="price-row"><span class="price" data-unit-price="5500">5 500 FC</span></div><button class="btn btn-orange" onclick="openOrder('Fufu Express — semoule instantanée maïs et manioc',5500,'FC')">Commander <span>→</span></button></div>
+          </article>
+          <article class="product" data-category="vivrier">
+            <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1627485937980-221c88ac04f9?auto=format&fit=crop&w=600&q=80" alt="Farine et céréales" onerror="this.style.display='none'"><span class="tag">Essentiel</span></div>
+            <div class="product-body"><h3>Farine / Vivrier</h3><p class="desc">Sac de 5 kg</p><div class="price-row"><span class="price" data-unit-price="15000">15 000 FC</span></div><button class="btn btn-orange" onclick="openOrder('Farine / Vivrier (sac 5 kg)',15000,'FC')">Commander <span>→</span></button></div>
+          </article>
+          <article class="product" data-category="epicerie">
+            <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80" alt="Bouteille d'huile végétale" onerror="this.style.display='none'"><span class="tag">Cuisine</span></div>
+            <div class="product-body"><h3>Huile végétale</h3><p class="desc">Bouteille de 1 L</p><div class="price-row"><span class="price" data-unit-price="6500">6 500 FC</span></div><button class="btn btn-orange" onclick="openOrder('Huile végétale (1 L)',6500,'FC')">Commander <span>→</span></button></div>
+          </article>
+          <article class="product" data-category="epicerie">
+            <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80" alt="Épices colorées" onerror="this.style.display='none'"><span class="tag">Saveurs</span></div>
+            <div class="product-body"><h3>Épices & purées</h3><p class="desc">Pot de 500 g</p><div class="price-row"><span class="price" data-unit-price="8000">8 000 FC</span></div><button class="btn btn-orange" onclick="openOrder('Épices & purées (500 g)',8000,'FC')">Commander <span>→</span></button></div>
+          </article>
+          <article class="product" data-category="kit">
+            <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Assortiment de produits alimentaires" onerror="this.style.display='none'"><span class="tag">Pack</span></div>
+            <div class="product-body"><h3>Kit Agro Local</h3><p class="desc">Carton complet</p><div class="price-row"><span class="price" data-unit-price="35000">35 000 FC</span></div><button class="btn btn-orange" onclick="openOrder('Kit Agro Local (carton)',35000,'FC')">Commander <span>→</span></button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="formations" class="training">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">Monter en compétences</div><h2>Formations digitales</h2><p>Des ressources pratiques à consulter à votre rythme.</p></div></div>
+        <div class="course-grid">
+          <article class="course"><div class="course-art" aria-hidden="true">♧</div><div><span class="label">GUIDE PDF</span><h3>Maîtriser l’élevage et l’agriculture urbaine</h3><p>Un guide pratique annoncé de 45 pages.</p><div class="course-foot"><span class="price">15 $</span><button class="btn btn-orange" onclick="openOrder('Guide PDF : Agriculture urbaine',15,'USD')">Acheter</button></div></div></article>
+          <article class="course"><div class="course-art" aria-hidden="true">📘</div><div><span class="label">MANUEL PROFESSIONNEL · PDF</span><h3>Fabrication de bouillies instantanées</h3><p>Un manuel BIECO PRODUIT de 32 pages, conçu comme support de formation pour débutants et base opérationnelle pour une petite unité agroalimentaire. Il aborde les céréales, les racines et tubercules, le séchage, la formulation, le contrôle qualité, les calculs économiques et les fiches pratiques.</p><div class="course-foot"><span class="price">30 $</span><button class="btn btn-orange" onclick="openOrder('Manuel professionnel BIECO : Fabrication de bouillies instantanées (PDF)',30,'USD')">Acheter le manuel</button></div></div></article>
+          <article class="course"><div class="course-art" aria-hidden="true">▶</div><div><span class="label">FORMATION VIDÉO</span><h3>Transformation et conservation des produits</h3><p>Des vidéos pratiques, durée annoncée : 2 heures.</p><div class="course-foot"><span class="price">25 $</span><button class="btn btn-orange" onclick="openOrder('Formation vidéo : Transformation',25,'USD')">Acheter</button></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap callout" id="contact"><div class="callout-card"><div><h2>Besoin d’un renseignement ?</h2><p>Contactez Bieco Production pour vérifier la disponibilité, la livraison ou une formation.</p></div><a class="btn btn-green" href="mailto:biecofood5@gmail.com">Nous écrire <span>→</span></a></div></div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-main">
+        <div class="footer-brand"><a class="brand" href="#"><svg class="brandmark" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M25 35C35 20 60 20 75 35" stroke="#f47721" stroke-width="8" stroke-linecap="round"/><path d="M15 55C15 30 40 15 70 30C80 35 85 45 85 55C85 70 70 85 45 85C30 85 20 75 15 65" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M20 78C30 88 50 88 68 75" stroke="#f47721" stroke-width="7" stroke-linecap="round"/><path d="M60 15C60 15 85 25 80 50C77 62 65 70 50 75C60 65 65 45 60 15Z" fill="#fff"/></svg><div><div class="brandname">Bieco <span>Store</span></div><div class="brandtag" style="color:#bfd4c2">Par Bieco Production</div></div></a><p>Produits agroalimentaires et ressources pratiques, avec un service pensé pour Kinshasa.</p></div>
+        <div class="footer-contact"><strong>Contact & informations</strong><a href="tel:+243894963392">Téléphone : +243 894 963 392</a><a href="mailto:biecofood5@gmail.com">biecofood5@gmail.com</a><span>Kinshasa, République démocratique du Congo</span></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Bieco Store. Tous droits réservés.</span><span>Par Bieco Production · Kinshasa</span></div>
+    </div>
+  </footer>
+
+  <div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div id="orderFormWrap">
+        <div class="modal-head"><div><h2 id="modalTitle">Votre commande</h2><p class="modal-sub">Renseignez vos coordonnées pour préparer la demande.</p></div><button class="close" type="button" aria-label="Fermer" onclick="closeOrder()">×</button></div>
+        <form id="orderForm">
+          <div class="summary"><span id="summaryName">Produit</span><strong id="summaryPrice">0 FC</strong></div>
+          <div class="field"><label for="customerName">Nom complet</label><input id="customerName" required autocomplete="name" placeholder="Ex. Marie Kabila"></div>
+          <div class="field"><label for="customerPhone">Téléphone / WhatsApp</label><input id="customerPhone" required type="tel" autocomplete="tel" placeholder="+243 …"></div>
+          <div class="field"><label for="customerAddress">Adresse de livraison (si nécessaire)</label><input id="customerAddress" autocomplete="street-address" placeholder="Commune, quartier, avenue"></div>
+          <div class="two">
+            <div class="field"><label for="quantity">Quantité</label><input id="quantity" type="number" min="1" max="99" value="1" required></div>
+            <div class="field"><label for="payment">Mode de paiement</label><select id="payment"><option>M-Pesa / Orange / Airtel</option><option>Paiement à la livraison</option><option>Carte bancaire (à confirmer)</option></select></div>
+          </div>
+          <div class="summary"><span>Total estimé</span><strong id="totalPrice">0 FC</strong></div>
+          <button class="btn btn-orange" type="submit">Préparer ma demande <span>→</span></button>
+          <p class="notice">Cette version prépare une demande sur cet appareil. Elle ne débite aucun paiement.</p>
+        </form>
+      </div>
+      <div class="success" id="orderSuccess">
+        <div class="modal-head"><div><h2>Demande préparée</h2><p class="modal-sub">Voici le récapitulatif de votre commande.</p></div><button class="close" type="button" aria-label="Fermer" onclick="closeOrder()">×</button></div>
+        <div class="success-box" id="successDetails"></div>
+        <button class="btn btn-green" type="button" onclick="sendWhatsApp()">Envoyer la demande par WhatsApp ↗</button>
+        <p class="notice">Le message WhatsApp s’ouvrira pour que vous puissiez le vérifier et l’envoyer.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    let selected = {name:"",price:0,currency:"FC"}, latestMessage = "";
+    const modal = document.getElementById("orderModal");
+    const money = (amount,currency) => amount === null || amount === undefined ? "À confirmer" : (currency === "FC" ? Math.round(amount).toLocaleString("fr-FR") + " FC" : amount.toLocaleString("fr-FR") + " $");
+    function openOrder(name,price,currency){selected={name,price,currency};document.getElementById("summaryName").textContent=name;document.getElementById("summaryPrice").textContent=money(price,currency);document.getElementById("quantity").value=1;updateTotal();document.getElementById("orderFormWrap").classList.remove("hidden");document.getElementById("orderSuccess").classList.remove("show");modal.classList.add("open");document.body.style.overflow="hidden";setTimeout(()=>document.getElementById("customerName").focus(),100)}
+    function closeOrder(){modal.classList.remove("open");document.body.style.overflow=""}
+    function updateTotal(){const q=Math.max(1,Math.min(99,Number(document.getElementById("quantity").value)||1));document.getElementById("totalPrice").textContent=selected.price===null?"À confirmer":money(selected.price*q,selected.currency)}
+    document.getElementById("quantity").addEventListener("input",updateTotal);
+    document.getElementById("orderForm").addEventListener("submit",function(e){e.preventDefault();const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("customerPhone").value.trim(),address=document.getElementById("customerAddress").value.trim(),qty=Math.max(1,Math.min(99,Number(document.getElementById("quantity").value)||1)),payment=document.getElementById("payment").value;const total=selected.price===null?"Prix à confirmer":money(selected.price*qty,selected.currency);latestMessage=`Bonjour Bieco Production, je souhaite commander : ${selected.name}. Quantité : ${qty}. Total estimé : ${total}. Nom : ${name}. Téléphone : ${phone}. Adresse : ${address||"À préciser"}. Paiement souhaité : ${payment}. Merci de confirmer la disponibilité et les modalités.`;document.getElementById("successDetails").textContent=`Produit : ${selected.name}\nQuantité : ${qty}\nTotal estimé : ${total}\nClient : ${name}\nTéléphone : ${phone}\nAdresse : ${address||"À préciser"}\nPaiement : ${payment}`;document.getElementById("successDetails").style.whiteSpace="pre-line";document.getElementById("orderFormWrap").classList.add("hidden");document.getElementById("orderSuccess").classList.add("show")});
+    function sendWhatsApp(){const phone="243894963392";window.open("https://wa.me/"+phone+"?text="+encodeURIComponent(latestMessage),"_blank","noopener,noreferrer")}
+    modal.addEventListener("click",e=>{if(e.target===modal)closeOrder()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeOrder()});
+    document.querySelectorAll("[data-filter]").forEach(button=>button.addEventListener("click",()=>{document.querySelectorAll("[data-filter]").forEach(b=>b.classList.toggle("active",b===button));document.querySelectorAll(".product").forEach(card=>{card.classList.toggle("hidden",button.dataset.filter!=="all"&&card.dataset.category!==button.dataset.filter)})}));
+    // Les sections apparaissent progressivement au fur et à mesure du défilement.
+    const revealTargets=document.querySelectorAll("section, .trust, .callout-card, footer .footer-main");
+    revealTargets.forEach((el,index)=>{el.classList.add("reveal");el.style.transitionDelay=(index%3)*80+"ms"});
+    if("IntersectionObserver" in window){document.documentElement.classList.add("reveal-ready");const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");revealObserver.unobserve(entry.target)}}),{threshold:.12,rootMargin:"0px 0px -35px 0px"});revealTargets.forEach(el=>revealObserver.observe(el))}else{revealTargets.forEach(el=>el.classList.add("is-visible"))}
+  </script>
+</body>
+</html>
