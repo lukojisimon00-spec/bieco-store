@@ -31,7 +31,7 @@
     .hero-copy>*{animation:copyEnter .65s both;opacity:0}.hero-copy>*:nth-child(1){animation-delay:.12s}.hero-copy>*:nth-child(2){animation-delay:.24s}.hero-copy>*:nth-child(3){animation-delay:.36s}.hero-copy>*:nth-child(4){animation-delay:.48s}
     .hero-art:before{animation:haloPulse 4s ease-in-out infinite}.hero-art img{animation:productFloat 4.5s ease-in-out infinite;will-change:transform}.floating-note{animation:noteFloat 3.5s ease-in-out infinite}
     .eyebrow i{animation:dotPulse 1.8s ease-out infinite}
-    .product{animation:cardIn .65s cubic-bezier(.2,.75,.25,1) both}.product:nth-child(2){animation-delay:.08s}.product:nth-child(3){animation-delay:.16s}.product:nth-child(4){animation-delay:.24s}.product:nth-child(5){animation-delay:.32s}
+    .product{animation:cardIn .65s cubic-bezier(.2,.75,.25,1) both}.product:nth-child(2){animation-delay:.08s}.product:nth-child(3){animation-delay:.16s}.product:nth-child(4){animation-delay:.24s}.product:nth-child(5){animation-delay:.32s}.product:nth-child(6){animation-delay:.4s}.product-illus svg{width:100%;height:100%;display:block}
     .trust-item,.course,.callout-card,.section-head{transition:transform .25s ease,box-shadow .25s ease}.trust-item:hover,.course:hover,.callout-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
     .btn{position:relative;overflow:hidden;transition:transform .22s ease,background .22s ease,box-shadow .22s ease}.btn:active{transform:scale(.97)}.btn-orange:hover,.btn-green:hover{box-shadow:0 9px 24px #103e2625}
     .reveal-ready .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.25,1)}.reveal-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
@@ -92,7 +92,7 @@
       <div class="wrap">
         <div class="section-head"><div><div class="kicker">La boutique</div><h2>Nos produits</h2><p>Des essentiels sélectionnés pour vous.</p></div><span class="chip active">Prix en francs congolais (FC)</span></div>
         <p class="swipe-hint">← Faites glisser les produits avec le doigt pour en découvrir davantage →</p>
-        <div class="categories" aria-label="Catégories de produits"><button class="chip active" data-filter="all">Tout voir</button><button class="chip" data-filter="vivrier">Farines & vivriers</button><button class="chip" data-filter="epicerie">Épicerie</button><button class="chip" data-filter="kit">Kits</button></div>
+        <div class="categories" aria-label="Catégories de produits"><button class="chip active" data-filter="all">Tout voir</button><button class="chip" data-filter="vivrier">Farines & vivriers</button><button class="chip" data-filter="epicerie">Épicerie</button><button class="chip" data-filter="kit">Kits</button><button class="chip" data-filter="accessoire">Accessoires</button></div>
         <div class="products">
           <article class="product featured-product" data-category="vivrier">
             <div class="product-img"><img loading="eager" src="images/fufu-express.jpg" alt="Emballage Fufu Express, semoule instantanée de maïs et manioc"><span class="tag">Produit vedette</span></div>
@@ -113,6 +113,10 @@
           <article class="product" data-category="kit">
             <div class="product-img"><img loading="lazy" src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Assortiment de produits alimentaires" onerror="this.style.display='none'"><span class="tag">Pack</span></div>
             <div class="product-body"><h3>Kit Agro Local</h3><p class="desc">Carton complet</p><div class="price-row"><span class="price" data-unit-price="35000">35 000 FC</span></div><button class="btn btn-orange" onclick="openOrder('Kit Agro Local (carton)',35000,'FC')">Commander <span>→</span></button></div>
+          </article>
+          <article class="product" data-category="accessoire">
+            <div class="product-img product-illus"><svg viewBox="0 0 200 140" role="img" aria-label="Illustration : col de chemise protégé par une bande absorbante"><rect width="200" height="140" fill="#eef4ef"/><path d="M40 140V70l30-28h60l30 28v70z" fill="#fff" stroke="#cbd8ce" stroke-width="3"/><path d="M70 42l30 34 30-34" fill="#f7f9f6" stroke="#cbd8ce" stroke-width="3" stroke-linejoin="round"/><path d="M74 48c8 10 18 18 26 22 8-4 18-12 26-22" fill="none" stroke="#f47721" stroke-width="7" stroke-linecap="round"/><path d="M78 52c7 8 15 13 22 16 7-3 15-8 22-16" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="4 4"/><path d="M100 76v64" stroke="#cbd8ce" stroke-width="3"/><circle cx="100" cy="92" r="3" fill="#cbd8ce"/><circle cx="100" cy="112" r="3" fill="#cbd8ce"/></svg><span class="tag">Nouveau</span></div>
+            <div class="product-body"><h3>Bandes absorbantes pour chemises</h3><p class="desc">Protège-cols anti-transpiration · absorbent la sueur, évitent les halos jaunes et protègent le tissu</p><div class="price-row"><span class="price">Prix à confirmer</span></div><button class="btn btn-orange" onclick="openOrder('Bandes absorbantes pour chemises (protège-cols anti-transpiration)',null,'FC')">Commander <span>→</span></button></div>
           </article>
         </div>
       </div>
